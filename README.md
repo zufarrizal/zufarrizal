@@ -1,7 +1,5 @@
 # Hi there, I'm Zufar Rizal 👋
 
-![Welcome Banner](https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif)
-
 I'm a versatile Web & App Developer fluent in PHP, Javascript, HTML, CSS, and Python. Skilled in Codeigniter, and Node.js frameworks. I love solving problems and building useful applications.
 
 - 🔭 I’m currently working on **[Minecraft Survival](https://github.com/zufarrizal/MinecraftSurvivalPythonTiktok)**
@@ -40,17 +38,6 @@ Here are some of my top projects:
 
 - Instagram: [https://www.instagram.com/zufarrizal](https://www.instagram.com/zufarrizal/)
 - TikTok: [@mjup96](https://www.tiktok.com/@mjup96)
-- Personal Website: 
-
-![Contact Me](https://media.giphy.com/media/l1J9u3TZfpmeDLkD6/giphy.gif)
-
-## ✨ Fun Animations
-
-Here's a fun animation just to keep things lively!
-
-![Coding Animation](https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
-
+- Personal Website: None
 
 Thanks for visiting my profile! Feel free to reach out if you want to collaborate on any project or just want to chat about tech.
-
-![Goodbye Animation](https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
