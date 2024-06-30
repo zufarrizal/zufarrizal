@@ -36,7 +36,7 @@ Here are some of my top projects:
 
 ## 📫 Connect with Me
 
-- Instagram: [https://www.instagram.com/zufarrizal](https://www.instagram.com/zufarrizal/)
+- Instagram: [zufarrizal](https://www.instagram.com/zufarrizal/)
 - TikTok: [@mjup96](https://www.tiktok.com/@mjup96)
 - Personal Website: None
 
