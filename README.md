@@ -41,8 +41,8 @@ Here are some of my top projects:
 - Personal Website: None
 
 ## Github site which can be accessed without creating a local file :
-- ![CAPCUT Auto-Caption Extractor](https://zufarrizal.github.io/CapcutSRT/)
-- ![HTML Live Preview](https://zufarrizal.github.io/Live-Preview-HTML/)
-- ![Python Compiler](https://zufarrizal.github.io/PythonCompiler/)
+- 🔗[CAPCUT Auto-Caption Extractor](https://zufarrizal.github.io/CapcutSRT/)
+- 🔗[HTML Live Preview](https://zufarrizal.github.io/Live-Preview-HTML/)
+- 🔗[Python Compiler](https://zufarrizal.github.io/PythonCompiler/)
 
 Thanks for visiting my profile! Feel free to reach out if you want to collaborate on any project or just want to chat about tech.
