@@ -27,19 +27,30 @@ Here are some of my top projects:
 ## 🛠️ Trophy
 ![Trophy](https://github-profile-trophy.vercel.app/?username=zufarrizal)
 
-## 🛠️ Technologies & Tools## 🛠️ Technologies & Tools
+## 🛠️ Web Language
 
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![CodeIgniter](https://img.shields.io/badge/-CodeIgniter-EF4223?style=flat-square&logo=codeigniter&logoColor=white)
+![My Skills](https://skillicons.dev/icons?i=html,css,php,js,bootstrap,nodejs,jquery)
+
+## 🛠️ Web Framewrok
+
+![My Skills](https://skillicons.dev/icons?i=laravel)
+
+## 🛠️ Desktop Language
+
+![My Skills](https://skillicons.dev/icons?i=py,cpp,cs)
+
+## 🛠️ IoT
+
+![My Skills](https://skillicons.dev/icons?i=arduino)
+
+## 🛠️ Software Used
+
+![My Skills](https://skillicons.dev/icons?i=vscode,windows,discord,ai,au,pr,git,github)
+
 
 ## 📫 Connect with Me
 
-- Instagram: [zufarrizal](https://www.instagram.com/zufarrizal/)
+[![Instagram](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/zufarrizal/)
 - TikTok: [@mjup96](https://www.tiktok.com/@mjup96)
 - Youtube : [RizalCode](https://www.youtube.com/@RizalCode)
 - Personal Website: None
