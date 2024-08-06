@@ -44,7 +44,7 @@ Here are some of my top projects:
 - Youtube : [RizalCode](https://www.youtube.com/@RizalCode)
 - Personal Website: None
 
-## Github site which can be accessed without creating a local file :
+## Github site which can be accessed :
 - 🔗[CAPCUT Auto-Caption Extractor](https://zufarrizal.github.io/CapcutSRT/)
 - 🔗[HTML Live Preview](https://zufarrizal.github.io/Live-Preview-HTML/)
 
