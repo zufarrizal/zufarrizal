@@ -27,15 +27,15 @@ Here are some of my top projects:
 ## 🛠️ Trophy
 ![Trophy](https://github-profile-trophy.vercel.app/?username=zufarrizal)
 
-## 🛠️ Web Language
+## 🛠️ Web
 
 ![My Skills](https://skillicons.dev/icons?i=html,css,php,js,bootstrap,nodejs,jquery)
 
-## 🛠️ Web Framewrok
+## 🛠️ Framewrok
 
 ![My Skills](https://skillicons.dev/icons?i=laravel)
 
-## 🛠️ Desktop Language
+## 🛠️ Desktop
 
 ![My Skills](https://skillicons.dev/icons?i=py,cpp,cs)
 
@@ -43,7 +43,7 @@ Here are some of my top projects:
 
 ![My Skills](https://skillicons.dev/icons?i=arduino)
 
-## 🛠️ Software Used
+## 🛠️ Software
 
 ![My Skills](https://skillicons.dev/icons?i=vscode,windows,discord,ai,au,pr,git,github)
 
