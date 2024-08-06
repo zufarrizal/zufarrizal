@@ -24,7 +24,10 @@ Here are some of my top projects:
 ![Zufar Rizal's GitHub stats](https://github-readme-stats.vercel.app/api?username=zufarrizal&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=zufarrizal&layout=compact&theme=radical)
 
-## 🛠️ Technologies & Tools
+## 🛠️ Trophy
+![Trophy](https://github-profile-trophy.vercel.app/?username=zufarrizal)
+
+## 🛠️ Technologies & Tools## 🛠️ Technologies & Tools
 
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
@@ -36,8 +39,9 @@ Here are some of my top projects:
 
 ## 📫 Connect with Me
 
-- Instagram: [zufarrizal](https://www.instagram.com/zufarrizal/)
+- Instagram: ![Instagram](https://www.instagram.com/zufarrizal/)
 - TikTok: [@mjup96](https://www.tiktok.com/@mjup96)
+- Youtube : [RizalCode](https://www.youtube.com/@RizalCode)
 - Personal Website: None
 
 ## Github site which can be accessed without creating a local file :
