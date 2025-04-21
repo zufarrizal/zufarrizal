@@ -13,11 +13,9 @@ I'm a versatile Web & App Developer fluent in PHP, Javascript, HTML, CSS, and Py
 
 Here are some of my top projects:
 
-1. **[MinecraftSurvivalPythonTiktok](https://github.com/zufarrizal/MinecraftSurvivalPythonTiktok)** - A fun survival game built with Python.
+1. **[siptas](https://github.com/zufarrizal/siptas)** - A comprehensive task management system.
 
-2. **[siptas](https://github.com/zufarrizal/siptas)** - A comprehensive task management system.
-
-3. **[sijakul](https://github.com/zufarrizal/sijakul)** - An efficient inventory management application.
+2. **[sijakul](https://github.com/zufarrizal/sijakul)** - An efficient inventory management application.
 
 ## 📈 GitHub Stats
 
