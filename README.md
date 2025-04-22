@@ -55,6 +55,5 @@ Here are some of my top projects:
 
 ## Github site which can be accessed :
 - 🔗[CAPCUT Auto-Caption Extractor](https://zufarrizal.github.io/CapcutSRT/)
-- 🔗[HTML Live Preview](https://zufarrizal.github.io/Live-Preview-HTML/)
 
 Thanks for visiting my profile! Feel free to reach out if you want to collaborate on any project or just want to chat about tech.
