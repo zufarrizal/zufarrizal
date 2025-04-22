@@ -15,7 +15,7 @@ Here are some of my top projects:
 
 1. **[siptas](https://github.com/zufarrizal/siptas)** - A comprehensive task management system.
 
-2. **[sijakul](https://github.com/zufarrizal/sijakul)** - An efficient inventory management application.
+2. **[sijakul](https://github.com/zufarrizal/sijakul)** - An efficient schedule management application.
 
 ## 📈 GitHub Stats
 
