@@ -58,6 +58,26 @@
       margin-bottom: 0.35rem;
     }
 
+    .hero-head {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.24);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .hero-meta {
+      min-width: 0;
+    }
+
     .subtitle {
       color: var(--muted);
       margin-top: 0;
@@ -122,6 +142,7 @@
     @media (max-width: 900px) {
       .stats-grid { grid-template-columns: 1fr; }
       .badge-row img { max-height: 28px; }
+      .avatar { width: 72px; height: 72px; }
     }
 
     @keyframes rise {
@@ -133,8 +154,13 @@
 <body>
   <main class="container">
     <section class="hero">
-      <h1>Hi, I'm Zufar Rizal</h1>
-      <p class="subtitle">Building useful products with clean code, thoughtful UX, and continuous learning.</p>
+      <div class="hero-head">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/70695512?v=4" alt="Zufar Rizal avatar" />
+        <div class="hero-meta">
+          <h1>Hi, I'm Zufar Rizal</h1>
+          <p class="subtitle">Building useful products with clean code, thoughtful UX, and continuous learning.</p>
+        </div>
+      </div>
       <div class="badge-row">
         <img src="https://img.shields.io/github/followers/zufarrizal?label=Followers&style=for-the-badge" alt="followers" />
         <img src="https://komarev.com/ghpvc/?username=zufarrizal&style=for-the-badge" alt="views" />
