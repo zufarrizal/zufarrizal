@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zufar Rizal | Profile Page</title>
+  <meta name="description" content="Complete profile page aligned with README for Zufar Rizal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg0: #06141f;
+      --bg1: #0f2b3d;
+      --panel: rgba(255, 255, 255, 0.08);
+      --line: rgba(255, 255, 255, 0.14);
+      --text: #e9f6ff;
+      --muted: #a8c8da;
+      --accent: #22d3ee;
+      --shadow: 0 24px 45px rgba(0, 0, 0, 0.3);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Space Grotesk", sans-serif;
+      background:
+        radial-gradient(920px 560px at -10% -10%, rgba(34, 211, 238, 0.24), transparent 55%),
+        radial-gradient(700px 450px at 120% 0%, rgba(245, 158, 11, 0.2), transparent 50%),
+        linear-gradient(135deg, var(--bg0), var(--bg1));
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+    }
+
+    .hero, .section {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 1.2rem;
+      animation: rise 700ms ease-out;
+    }
+
+    .hero h1, .section h2 {
+      margin: 0;
+      font-family: "Sora", sans-serif;
+      line-height: 1.2;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      margin-bottom: 0.35rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 0.9rem;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+    }
+
+    .badge-row img { max-height: 30px; }
+
+    .section {
+      margin-top: 0.9rem;
+    }
+
+    .section h2 {
+      margin-bottom: 0.7rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    .stack-group { margin-top: 0.7rem; }
+
+    .stack-group b {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: #d7f4ff;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+    }
+
+    .stats-grid img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(0, 0, 0, 0.16);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .footer {
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: 1fr; }
+      .badge-row img { max-height: 28px; }
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Hi, I'm Zufar Rizal</h1>
+      <p class="subtitle">Building useful products with clean code, thoughtful UX, and continuous learning.</p>
+      <div class="badge-row">
+        <img src="https://img.shields.io/github/followers/zufarrizal?label=Followers&style=for-the-badge" alt="followers" />
+        <img src="https://komarev.com/ghpvc/?username=zufarrizal&style=for-the-badge" alt="views" />
+        <img src="https://img.shields.io/github/stars/zufarrizal/zufarrizal?label=Profile%20Repo%20Stars&style=for-the-badge" alt="stars" />
+        <img src="https://img.shields.io/badge/dynamic/json?color=2ea44f&label=Public%20Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fzufarrizal&style=for-the-badge" alt="repos" />
+        <img src="https://img.shields.io/github/last-commit/zufarrizal/zufarrizal?label=Last%20Update&style=for-the-badge" alt="last update" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>About Me</h2>
+      <ul>
+        <li>Passionate about web development, automation, and problem solving</li>
+        <li>Focused on building projects that are simple, fast, and valuable</li>
+        <li>Open to collaboration on impactful ideas</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Tech Stack</h2>
+      <div class="stack-group">
+        <b>Frontend</b>
+        <div class="badge-row">
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+          <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+          <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+          <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+          <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+        </div>
+      </div>
+      <div class="stack-group">
+        <b>Frameworks and Libraries</b>
+        <div class="badge-row">
+          <img src="https://img.shields.io/badge/Nuxt-00DC82?style=flat-square&logo=nuxt&logoColor=white" alt="Nuxt" />
+          <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js" />
+          <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" alt="Express.js" />
+          <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS" />
+          <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel" />
+        </div>
+      </div>
+      <div class="stack-group">
+        <b>Backend, Database, and Tools</b>
+        <div class="badge-row">
+          <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js" />
+          <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+          <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+          <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+          <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
+          <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+          <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+          <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+          <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
+          <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+          <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" alt="Postman" />
+          <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>GitHub Stats</h2>
+      <div class="stats-grid">
+        <img src="https://github-readme-stats.vercel.app/api?username=zufarrizal&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zufarrizal&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+        <img src="https://streak-stats.demolab.com?user=zufarrizal&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=zufarrizal&theme=tokyo-night&hide_border=true" alt="Activity Graph" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Let's Connect</h2>
+      <p>Email: <a href="mailto:zufarrizal24@gmail.com">zufarrizal24@gmail.com</a></p>
+    </section>
+
+    <p class="footer"><em>"Keep shipping, keep learning."</em></p>
+  </main>
+</body>
+</html>
