@@ -30,21 +30,23 @@
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
 </p>
 
-## Featured Projects
-- `Project Name 1` - Short one-line value proposition
-- `Project Name 2` - Short one-line value proposition
-- `Project Name 3` - Short one-line value proposition
-
 ## GitHub Stats
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=zufarrizal&show_icons=true&theme=tokyonight&hide_border=true" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zufarrizal&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
+<p align="center">
+  <img height="165" src="https://streak-stats.demolab.com?user=zufarrizal&theme=tokyonight&hide_border=true" />
+</p>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=zufarrizal&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8" />
+</p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zufarrizal&theme=tokyo-night&hide_border=true" />
+</p>
 
 ## Let's Connect
-- LinkedIn: `https://linkedin.com/in/your-link`
-- Portfolio: `https://your-portfolio.com`
-- Email: `your.email@example.com`
+- Email: `zufarrizal24@gmail.com`
 
 ---
 <p align="center">
