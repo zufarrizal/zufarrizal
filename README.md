@@ -11,6 +11,15 @@
   <a href="https://github.com/zufarrizal">
     <img src="https://komarev.com/ghpvc/?username=zufarrizal&style=for-the-badge" alt="Profile views" />
   </a>
+  <a href="https://github.com/zufarrizal/zufarrizal/stargazers">
+    <img src="https://img.shields.io/github/stars/zufarrizal/zufarrizal?label=Profile%20Repo%20Stars&style=for-the-badge" alt="Profile repository stars" />
+  </a>
+  <a href="https://github.com/zufarrizal?tab=repositories">
+    <img src="https://img.shields.io/badge/dynamic/json?color=2ea44f&label=Public%20Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fzufarrizal&style=for-the-badge" alt="Public repositories" />
+  </a>
+  <a href="https://github.com/zufarrizal/zufarrizal/commits/main">
+    <img src="https://img.shields.io/github/last-commit/zufarrizal/zufarrizal?label=Last%20Update&style=for-the-badge" alt="Last update" />
+  </a>
 </p>
 
 ## About Me
