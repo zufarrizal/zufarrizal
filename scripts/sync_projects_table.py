@@ -73,7 +73,7 @@ def fmt_date(value: str) -> str:
 
 def build_rows(repos):
     rows = []
-    for repo in repos:
+    for i, repo in enumerate(repos, start=1):
         name = escape(repo.get("name") or "-")
         url = escape(repo.get("html_url") or "#", quote=True)
         repo_type = "Fork" if repo.get("fork") else "Source"
@@ -82,7 +82,7 @@ def build_rows(repos):
         description = escape((repo.get("description") or "-").strip() or "-")
 
         rows.append(
-            f'            <tr><td>{name}</td><td><a href="{url}" target="_blank" rel="noreferrer">Open</a></td><td>{repo_type}</td><td>{language}</td><td>{updated}</td><td>{description}</td></tr>'
+            f'            <tr><td>{i}</td><td>{name}</td><td><a href="{url}" target="_blank" rel="noreferrer">Open</a></td><td>{repo_type}</td><td>{language}</td><td>{updated}</td><td>{description}</td></tr>'
         )
 
     return "\n".join(rows)
