@@ -1,6 +1,8 @@
 import json
 import os
 import re
+import subprocess
+import time
 import urllib.request
 from datetime import datetime
 from html import escape
@@ -24,9 +26,29 @@ def fetch_repos(username: str):
         if token:
             headers["Authorization"] = f"Bearer {token}"
 
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+        data = None
+        last_error = None
+
+        for attempt in range(1, 6):
+            try:
+                req = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(req, timeout=25) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                break
+            except Exception as err:
+                last_error = err
+                time.sleep(attempt)
+
+        # Fallback to curl if urllib repeatedly fails on the host.
+        if data is None:
+            cmd = ["curl", "-sL", url, "-H", "Accept: application/vnd.github+json"]
+            if token:
+                cmd.extend(["-H", f"Authorization: Bearer {token}"])
+            try:
+                result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+                data = json.loads(result.stdout)
+            except Exception as curl_err:
+                raise RuntimeError(f"Failed to fetch GitHub repos page {page}: {last_error} / {curl_err}")
 
         if not data:
             break
