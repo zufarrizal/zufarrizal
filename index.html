@@ -817,10 +817,13 @@
       --text-primary: #1a1a2e;
       --text-secondary: #555555;
       --text-muted: #999999;
+      --accent: #2563eb;
+      --accent-glow: rgba(37,99,235,0.1);
     }
 
     :root[data-theme="light"] nav {
-      background: rgba(248,249,250,0.85);
+      background: rgba(248,249,250,0.9);
+      border-bottom-color: rgba(0,0,0,0.08);
     }
 
     :root[data-theme="light"] .bg-grid {
@@ -831,7 +834,116 @@
 
     :root[data-theme="light"] .bg-glow,
     :root[data-theme="light"] .bg-glow-2 {
-      opacity: 0.3;
+      opacity: 0.2;
+    }
+
+    :root[data-theme="light"] .btn-primary {
+      background: var(--text-primary);
+      color: var(--bg-primary);
+    }
+
+    :root[data-theme="light"] .btn-secondary {
+      border-color: var(--border);
+      color: var(--text-secondary);
+    }
+
+    :root[data-theme="light"] .btn-secondary:hover {
+      background: var(--bg-card);
+      border-color: var(--border-hover);
+    }
+
+    :root[data-theme="light"] .about-card,
+    :root[data-theme="light"] .stats-card,
+    :root[data-theme="light"] .fun-fact-card,
+    :root[data-theme="light"] .project-card {
+      background: rgba(0,0,0,0.02);
+      border-color: rgba(0,0,0,0.06);
+    }
+
+    :root[data-theme="light"] .about-card:hover,
+    :root[data-theme="light"] .stats-card:hover,
+    :root[data-theme="light"] .fun-fact-card:hover,
+    :root[data-theme="light"] .project-card:hover {
+      background: rgba(0,0,0,0.04);
+      border-color: rgba(0,0,0,0.12);
+    }
+
+    :root[data-theme="light"] .section-label {
+      color: var(--accent);
+    }
+
+    :root[data-theme="light"] .stack-item {
+      background: rgba(0,0,0,0.03);
+      border-color: rgba(0,0,0,0.06);
+      color: var(--text-secondary);
+    }
+
+    :root[data-theme="light"] .stack-item:hover {
+      background: rgba(0,0,0,0.06);
+      border-color: rgba(0,0,0,0.12);
+      color: var(--text-primary);
+    }
+
+    :root[data-theme="light"] .filter-btn {
+      border-color: rgba(0,0,0,0.08);
+      color: var(--text-secondary);
+    }
+
+    :root[data-theme="light"] .filter-btn:hover,
+    :root[data-theme="light"] .filter-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    :root[data-theme="light"] .project-card-footer {
+      border-top-color: rgba(0,0,0,0.06);
+    }
+
+    :root[data-theme="light"] .project-card-footer span {
+      color: var(--text-muted);
+    }
+
+    :root[data-theme="light"] .contact-card {
+      background: rgba(0,0,0,0.02);
+      border-color: rgba(0,0,0,0.06);
+    }
+
+    :root[data-theme="light"] .contact-card:hover {
+      background: rgba(0,0,0,0.04);
+      border-color: rgba(0,0,0,0.12);
+    }
+
+    :root[data-theme="light"] footer {
+      border-top-color: rgba(0,0,0,0.06);
+    }
+
+    :root[data-theme="light"] .back-to-top {
+      background: rgba(255,255,255,0.8);
+      border-color: rgba(0,0,0,0.08);
+      color: var(--text-secondary);
+    }
+
+    :root[data-theme="light"] .back-to-top:hover {
+      background: rgba(255,255,255,0.95);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    :root[data-theme="light"] .theme-toggle {
+      background: rgba(255,255,255,0.8);
+      border-color: rgba(0,0,0,0.08);
+      color: var(--text-secondary);
+    }
+
+    :root[data-theme="light"] .theme-toggle:hover {
+      background: rgba(255,255,255,0.95);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    :root[data-theme="light"] .hero-avatar::before {
+      background: conic-gradient(from 0deg, #2563eb, #7c3aed, #ec4899, #2563eb);
     }
 
     /* Fun facts section */
