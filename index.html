@@ -752,6 +752,188 @@
     }
 
     /* ═══════════════════════════════════════════
+       PLAYFUL ELEMENTS
+    ═══════════════════════════════════════════ */
+
+    /* Particles canvas */
+    #particles {
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+    }
+
+    /* Cursor sparkle trail */
+    .sparkle {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      font-size: 12px;
+      animation: sparkle-fade 1s ease-out forwards;
+    }
+
+    @keyframes sparkle-fade {
+      0% { opacity: 1; transform: scale(1) translateY(0); }
+      100% { opacity: 0; transform: scale(0) translateY(-30px); }
+    }
+
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      top: 80px;
+      right: 24px;
+      z-index: 100;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 1.3rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .theme-toggle:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: rotate(20deg) scale(1.1);
+    }
+
+    /* Light theme */
+    :root[data-theme="light"] {
+      --bg-primary: #f8f9fa;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(0,0,0,0.03);
+      --bg-card-hover: rgba(0,0,0,0.06);
+      --border: rgba(0,0,0,0.08);
+      --border-hover: rgba(0,0,0,0.15);
+      --text-primary: #1a1a2e;
+      --text-secondary: #555555;
+      --text-muted: #999999;
+    }
+
+    :root[data-theme="light"] nav {
+      background: rgba(248,249,250,0.85);
+    }
+
+    :root[data-theme="light"] .bg-grid {
+      background-image:
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    }
+
+    :root[data-theme="light"] .bg-glow,
+    :root[data-theme="light"] .bg-glow-2 {
+      opacity: 0.3;
+    }
+
+    /* Fun facts section */
+    .fun-facts {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .fun-fact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 32px;
+      max-width: 600px;
+      margin: 0 auto;
+      transition: all var(--transition);
+    }
+
+    .fun-fact-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .fun-fact-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .fun-fact-text {
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .fun-fact-emoji {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    /* Clickable avatar interaction */
+    .hero-avatar {
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .hero-avatar:hover {
+      transform: scale(1.05);
+    }
+
+    .hero-avatar.clicked {
+      animation: avatar-bounce 0.6s ease;
+    }
+
+    @keyframes avatar-bounce {
+      0% { transform: scale(1); }
+      30% { transform: scale(1.2) rotate(10deg); }
+      50% { transform: scale(0.9) rotate(-5deg); }
+      70% { transform: scale(1.1) rotate(3deg); }
+      100% { transform: scale(1) rotate(0); }
+    }
+
+    /* Enhanced card hover effects */
+    .about-card {
+      transition: all var(--transition);
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+
+    .about-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .about-card:hover .icon {
+      animation: icon-wiggle 0.5s ease;
+    }
+
+    @keyframes icon-wiggle {
+      0% { transform: rotate(0); }
+      25% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0); }
+    }
+
+    /* Animated counter */
+    .counter {
+      display: inline-block;
+      min-width: 2ch;
+    }
+
+    /* Random greeting */
+    .greeting-text {
+      display: inline;
+    }
+
+    /* ═══════════════════════════════════════════
        ANIMATIONS
     ═══════════════════════════════════════════ */
     .fade-up {
@@ -818,9 +1000,13 @@
 <body>
 
   <!-- Background -->
+  <canvas id="particles"></canvas>
   <div class="bg-grid"></div>
   <div class="bg-glow"></div>
   <div class="bg-glow-2"></div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
 
   <!-- Navigation -->
   <nav>
@@ -831,6 +1017,7 @@
         <li><a href="#stack">Stack</a></li>
         <li><a href="#working-on">Focus</a></li>
         <li><a href="#learning">Learning</a></li>
+        <li><a href="#fun-facts">Fun</a></li>
         <li><a href="#ai">AI</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#stats">Stats</a></li>
@@ -1048,6 +1235,24 @@
             <div class="stack-item"><span class="dot" style="background:#BC8CFF"></span>UI/UX Principles</div>
             <div class="stack-item"><span class="dot" style="background:#58A6FF"></span>Mobile Development</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun Facts -->
+  <section id="fun-facts">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Fun</div>
+        <h2 class="section-title">Random Fun Facts</h2>
+        <p class="section-desc">Click to get a new random fact about me!</p>
+      </div>
+      <div class="fun-facts fade-up">
+        <div class="fun-fact-card" id="funFactCard" style="cursor:pointer;" onclick="nextFact()">
+          <span class="fun-fact-emoji" id="factEmoji">🚀</span>
+          <div class="fun-fact-label">Did you know?</div>
+          <div class="fun-fact-text" id="factText">Click to discover a fun fact!</div>
         </div>
       </div>
     </div>
@@ -1313,13 +1518,166 @@
     // const noop = () => {};
     // ['log','warn','error','info','debug','table','trace'].forEach(m => console[m] = noop);
 
-    // Typing animation
-    const taglines = [
+    // ═══════════════════════════════════════════
+    // PLAYFUL ELEMENTS
+    // ═══════════════════════════════════════════
+
+    // 1. Animated particles background
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.5;
+        this.speedY = (Math.random() - 0.5) * 0.5;
+        this.opacity = Math.random() * 0.5 + 0.1;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+          this.reset();
+        }
+      }
+      draw() {
+        ctx.fillStyle = `rgba(59, 130, 246, ${this.opacity})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < 60; i++) particles.push(new Particle());
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // 2. Cursor sparkle trail
+    const sparkles = ['✨', '⭐', '💫', '🌟', '⚡'];
+    let sparkleThrottle = 0;
+    document.addEventListener('mousemove', (e) => {
+      if (Date.now() - sparkleThrottle < 80) return;
+      sparkleThrottle = Date.now();
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      sparkle.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
+      sparkle.style.left = (e.clientX - 6) + 'px';
+      sparkle.style.top = (e.clientY - 6) + 'px';
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 1000);
+    });
+
+    // 3. Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      themeToggle.textContent = next === 'dark' ? '🌙' : '☀️';
+      themeToggle.style.transform = 'rotate(360deg) scale(1.2)';
+      setTimeout(() => themeToggle.style.transform = '', 300);
+    });
+
+    // 4. Random fun facts
+    const funFacts = [
+      { emoji: '🚀', text: 'I started coding because I wanted to build games — ended up building web apps instead!' },
+      { emoji: '🎮', text: 'My first project was a Minecraft bot controlled through TikTok live.' },
+      { emoji: '☕', text: 'I debug best between 11PM and 3AM. Night owl coder!' },
+      { emoji: '🤖', text: 'I use AI for almost everything now — coding, learning, even writing this profile!' },
+      { emoji: '🎯', text: 'I believe in shipping fast and iterating. Done is better than perfect.' },
+      { emoji: '🔧', text: 'I once built a Chrome Dino bot that never loses. Auto-jump, auto-duck!' },
+      { emoji: '📱', text: 'I started with PHP and jQuery. Now I code in Go, TypeScript, and Python.' },
+      { emoji: '🎨', text: 'I spend more time on UI/UX than the actual backend logic sometimes.' },
+      { emoji: '🌍', text: 'I love building tools that solve real problems for real people.' },
+      { emoji: '💡', text: 'My coding philosophy: Keep it simple, keep it shipping.' },
+      { emoji: '🎵', text: 'I built a music cutter web app that works entirely in the browser.' },
+      { emoji: '🐍', text: 'Python was my gateway into automation and bots.' },
+      { emoji: '⚡', text: 'Go is my favorite language for backend. Fast, simple, compiled.' },
+      { emoji: '🔒', text: 'I take security seriously — this profile has anti-tampering protections!' },
+      { emoji: '🎯', text: 'Every project I build starts with "What problem does this solve?"' },
+    ];
+
+    let lastFactIndex = -1;
+    function nextFact() {
+      let index;
+      do { index = Math.floor(Math.random() * funFacts.length); } while (index === lastFactIndex);
+      lastFactIndex = index;
+      const fact = funFacts[index];
+      const card = document.getElementById('funFactCard');
+      const emoji = document.getElementById('factEmoji');
+      const text = document.getElementById('factText');
+      card.style.transform = 'scale(0.95)';
+      card.style.opacity = '0.5';
+      setTimeout(() => {
+        emoji.textContent = fact.emoji;
+        text.textContent = fact.text;
+        card.style.transform = 'scale(1)';
+        card.style.opacity = '1';
+      }, 150);
+    }
+    nextFact();
+
+    // 5. Clickable avatar interaction
+    const avatar = document.querySelector('.hero-avatar');
+    const avatarEmojis = ['🎉', '🚀', '⚡', '🔥', '✨', '💎', '🌟', '🎯', '💥', '🎊'];
+    if (avatar) {
+      avatar.addEventListener('click', () => {
+        avatar.classList.add('clicked');
+        setTimeout(() => avatar.classList.remove('clicked'), 600);
+        // Burst emojis from avatar
+        for (let i = 0; i < 8; i++) {
+          setTimeout(() => {
+            const emoji = document.createElement('div');
+            emoji.className = 'sparkle';
+            emoji.textContent = avatarEmojis[Math.floor(Math.random() * avatarEmojis.length)];
+            const rect = avatar.getBoundingClientRect();
+            emoji.style.left = (rect.left + rect.width/2 + (Math.random()-0.5)*100) + 'px';
+            emoji.style.top = (rect.top + rect.height/2 + (Math.random()-0.5)*60) + 'px';
+            emoji.style.fontSize = '20px';
+            document.body.appendChild(emoji);
+            setTimeout(() => emoji.remove(), 1000);
+          }, i * 50);
+        }
+      });
+    }
+
+    // 6. Random greeting
+    const greetings = [
       'Building useful products with clean code and thoughtful UX.',
       'Full-stack developer. Problem solver. Lifelong learner.',
       'Turning ideas into fast, scalable web applications.',
-      'Web dev · Automation · Open source enthusiast.'
+      'Web dev · Automation · Open source enthusiast.',
+      'Shipping code, one commit at a time. 🚀',
+      'Human + AI = Unstoppable. 🤖',
+      'Clean code, thoughtful UX, continuous learning. ✨',
+      'Building the future, one project at a time. 💡',
     ];
+
+    // Typing animation (with random greetings)
+    const taglines = greetings;
     let tagIdx = 0, charIdx = 0, deleting = false;
     const el = document.getElementById('tagline');
 
