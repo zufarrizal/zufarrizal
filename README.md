@@ -104,6 +104,36 @@
 
 ---
 
+## 🤖 AI & Development
+
+**How I Use AI**
+- 🤖 **AI-Assisted Coding** — Pair programming with AI for code generation, debugging, and architecture
+- 🧠 **Prompt Engineering** — Crafting precise prompts for high-quality LLM outputs
+- ⚡ **Rapid Prototyping** — Building MVPs in hours with AI-accelerated workflows
+- 📚 **AI-Powered Learning** — Using AI tutors to learn new technologies faster
+
+**AI Tools in My Workflow**
+<br />
+<img src="https://img.shields.io/badge/ChatGPT-D97706?style=flat-square&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/Claude-E879A0?style=flat-square&logo=anthropic&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub_Copilot-22C55E?style=flat-square&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/Cursor-3B82F6?style=flat-square&logo=cursor&logoColor=white" />
+<img src="https://img.shields.io/badge/Hermes_Agent-A855F7?style=flat-square&logo=nousresearch&logoColor=white" />
+<img src="https://img.shields.io/badge/Midjourney-F97316?style=flat-square&logo=midjourney&logoColor=white" />
+<img src="https://img.shields.io/badge/v0.dev-EC4899?style=flat-square&logo=vercel&logoColor=white" />
+<img src="https://img.shields.io/badge/Bolt.new-06B6D4?style=flat-square&logo=bolt&logoColor=white" />
+
+**AI Topics I'm Exploring**
+<br />
+<img src="https://img.shields.io/badge/LLMs-3B82F6?style=flat-square&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/RAG_Systems-A855F7?style=flat-square&logo=langchain&logoColor=white" />
+<img src="https://img.shields.io/badge/AI_Agents-22C55E?style=flat-square&logo=autogen&logoColor=white" />
+<img src="https://img.shields.io/badge/Multi--Modal_AI-F97316?style=flat-square&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/Fine--Tuning-EC4899?style=flat-square&logo=huggingface&logoColor=white" />
+<img src="https://img.shields.io/badge/AI_Ethics-D97706?style=flat-square&logo=mozilla&logoColor=white" />
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
