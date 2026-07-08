@@ -11,7 +11,7 @@
 <img src="https://img.shields.io/github/followers/zufarrizal?style=flat-square&color=0D1117&labelColor=58A6FF&logo=github&logoColor=white" />
 <img src="https://img.shields.io/badge/Repos-1-blue?style=flat-square&color=0D1117&labelColor=3FB950&logo=github&logoColor=white" />
 <img src="https://img.shields.io/github/stars/zufarrizal?style=flat-square&color=0D1117&labelColor=D29922&logo=github&logoColor=white" />
-<img src="https://img.shields.io/github/languages/count/zufarrizal?style=flat-square&color=0D1117&labelColor=BC8CFF&logo=github&logoColor=white" />
+<img src="https://img.shields.io/github/languages/code-size/zufarrizal?style=flat-square&color=0D1117&labelColor=BC8CFF&logo=github&logoColor=white" />
 <img src="https://img.shields.io/github/last-commit/zufarrizal/zufarrizal?style=flat-square&color=0D1117&labelColor=F778BA&logo=github&logoColor=white" />
 <img src="https://komarev.com/ghpvc/?username=zufarrizal&style=flat-square&color=0D1117&labelColor=58A6FF&logo=github&logoColor=white" />
 
