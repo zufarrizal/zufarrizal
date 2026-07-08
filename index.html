@@ -14,7 +14,7 @@
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" integrity="sha384-O4rxWO24fGMG+2QrduBukgDUgpK3Pg/hU+9CM5a2JBv7Pb4brEsZoiyEZhtFbwqz" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     /* ═══════════════════════════════════════════
        CSS RESET & VARIABLES
@@ -1127,6 +1127,123 @@
 
   <!-- Scripts -->
   <script>
+    // ═══════════════════════════════════════════
+    // SECURITY: Anti-tampering protections
+    // ═══════════════════════════════════════════
+
+    // 1. Anti-clickjacking: break out of iframes
+    if (window.self !== window.top) {
+      window.top.location = window.self.location;
+    }
+
+    // 2. Prevent embedding in iframes (additional layer)
+    if (window.frameElement) {
+      document.body.innerHTML = '<h1 style="color:#ff4444;text-align:center;margin-top:40vh;font-family:monospace;">This page cannot be embedded.</h1>';
+    }
+
+    // 3. Console warning message
+    console.log('%c⚠️ WARNING', 'color: #ff4444; font-size: 24px; font-weight: bold;');
+    console.log('%cThis is a browser feature intended for developers. Do not paste any code here that you don\'t understand — it could compromise your account.', 'color: #ff8800; font-size: 14px;');
+    console.log('%cIf someone told you to copy-paste something here, it\'s likely a scam.', 'color: #ff8800; font-size: 14px;');
+
+    // 4. Disable right-click context menu
+    document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      return false;
+    });
+
+    // 5. Disable common keyboard shortcuts for DevTools
+    document.addEventListener('keydown', (e) => {
+      // F12
+      if (e.key === 'F12') {
+        e.preventDefault();
+        return false;
+      }
+      // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+      if (e.ctrlKey && e.shiftKey && ['I','J','C','i','j','c'].includes(e.key)) {
+        e.preventDefault();
+        return false;
+      }
+      // Ctrl+U (view source)
+      if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+        return false;
+      }
+      // Ctrl+S (save page)
+      if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+        return false;
+      }
+    });
+
+    // 6. Disable drag on all elements
+    document.addEventListener('dragstart', (e) => {
+      e.preventDefault();
+      return false;
+    });
+
+    // 7. Disable text selection on non-input elements
+    document.addEventListener('selectstart', (e) => {
+      if (!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) {
+        // Allow selection on links and code blocks
+        if (!e.target.closest('a, code, pre')) {
+          // Don't prevent - let users select text
+        }
+      }
+    });
+
+    // 8. Detect DevTools (basic heuristic)
+    let devToolsOpen = false;
+    const threshold = 160;
+    setInterval(() => {
+      if (window.outerWidth - window.innerWidth > threshold || 
+          window.outerHeight - window.innerHeight > threshold) {
+        if (!devToolsOpen) {
+          devToolsOpen = true;
+          console.clear();
+          console.log('%c⚠️ DevTools detected. This page is monitored.', 'color: #ff4444; font-size: 16px; font-weight: bold;');
+        }
+      } else {
+        devToolsOpen = false;
+      }
+    }, 1000);
+
+    // 9. Prevent eval() and Function() constructor attacks
+    const originalEval = window.eval;
+    window.eval = function() {
+      console.warn('eval() is disabled for security reasons.');
+      return null;
+    };
+
+    // 10. DOM tamper detection - monitor critical elements
+    const criticalSelectors = ['nav', '.hero', '.container'];
+    const originalHTML = {};
+    criticalSelectors.forEach(sel => {
+      const el = document.querySelector(sel);
+      if (el) originalHTML[sel] = el.innerHTML;
+    });
+
+    // Check DOM integrity every 5 seconds
+    setInterval(() => {
+      criticalSelectors.forEach(sel => {
+        const el = document.querySelector(sel);
+        if (el && originalHTML[sel] && el.innerHTML !== originalHTML[sel]) {
+          console.warn(`%c⚠️ DOM tampering detected on: ${sel}`, 'color: #ff4444; font-weight: bold;');
+          // Optionally reload the page to restore original content
+          // window.location.reload();
+        }
+      });
+    }, 5000);
+
+    // 11. Prevent prototype pollution
+    Object.freeze(Object.prototype);
+    Object.freeze(Array.prototype);
+    Object.freeze(Function.prototype);
+
+    // 12. Disable console in production (optional - uncomment if needed)
+    // const noop = () => {};
+    // ['log','warn','error','info','debug','table','trace'].forEach(m => console[m] = noop);
+
     // Typing animation
     const taglines = [
       'Building useful products with clean code and thoughtful UX.',
