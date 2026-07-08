@@ -27,6 +27,7 @@
 - 🤖 **Automation & Bots** — Game bots, TikTok integrations, and smart tools that run on their own.
 - 🎬 **Media Processing** — Browser-based video/audio cutters, color extractors, and file converters.
 - 🎮 **Games & Experiments** — Interactive games, UI experiments, and creative coding projects.
+- 🔒 **Security** — Client-side hardening, CSP headers, anti-tampering protections, and secure coding practices.
 
 ---
 
