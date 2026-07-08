@@ -8,9 +8,12 @@
 
 <br />
 
-<img src="https://img.shields.io/github/followers/zufarrizal?label=Followers&style=flat-square&color=555&labelColor=111" />
-<img src="https://komarev.com/ghpvc/?username=zufarrizal&style=flat-square&color=555555&labelColor=111111" />
-<img src="https://img.shields.io/badge/dynamic/json?color=555&labelColor=111&label=Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fzufarrizal&style=flat-square" />
+<img src="https://img.shields.io/github/followers/zufarrizal?style=flat-square&color=0D1117&labelColor=58A6FF&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/dynamic/json?style=flat-square&color=0D1117&labelColor=3FB950&label=Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fzufarrizal&logo=github&logoColor=white" />
+<img src="https://img.shields.io/github/stars/zufarrizal?style=flat-square&color=0D1117&labelColor=D29922&logo=github&logoColor=white" />
+<img src="https://img.shields.io/github/commit-activity/y/zufarrizal?style=flat-square&color=0D1117&labelColor=F778BA&logo=github&logoColor=white" />
+<img src="https://img.shields.io/github/last-commit/zufarrizal/zufarrizal?style=flat-square&color=0D1117&labelColor=BC8CFF&logo=github&logoColor=white" />
+<img src="https://komarev.com/ghpvc/?username=zufarrizal&style=flat-square&color=0D1117&labelColor=58A6FF&logo=github&logoColor=white" />
 
 </div>
 
