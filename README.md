@@ -66,8 +66,8 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=zufarrizal&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=3b82f6&text_color=ededed&icon_color=888888" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zufarrizal&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=3b82f6&text_color=ededed" />
+<img height="165" src="https://github-readme-stats-one-bice.vercel.app/api?username=zufarrizal&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=3b82f6&text_color=ededed&icon_color=888888" />
+<img height="165" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=zufarrizal&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=3b82f6&text_color=ededed" />
 
 <img src="https://streak-stats.demolab.com?user=zufarrizal&theme=dark&hide_border=true&background=0a0a0a&ring=3b82f6&fire=3b82f6&currStreakLabel=ededed&sideLabels=888888" />
 
