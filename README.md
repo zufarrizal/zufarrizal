@@ -9,7 +9,7 @@
 <br />
 
 <img src="https://img.shields.io/github/followers/zufarrizal?label=Followers&style=flat-square&color=555&labelColor=111" />
-<img src="https://komarev.com/ghpvc/?username=zufarrizal&style=flat-square&color=555&labelColor=111" />
+<img src="https://komarev.com/ghpvc/?username=zufarrizal&style=flat-square&color=555555&labelColor=111111" />
 <img src="https://img.shields.io/badge/dynamic/json?color=555&labelColor=111&label=Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fzufarrizal&style=flat-square" />
 
 </div>
