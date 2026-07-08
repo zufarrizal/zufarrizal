@@ -21,10 +21,12 @@
 
 ## ⚡ About Me
 
-- 🔭 Full-stack developer focused on web apps, automation, and developer tools
-- 🎯 Building projects that are simple, fast, and valuable
-- 🌱 Always learning, always shipping
-- 💬 Open to collaboration on impactful ideas
+- ⚡ **Web Development** — Full-stack web apps with modern frameworks. REST APIs to real-time interfaces.
+- 🔧 **Developer Tools** — CLI tools, desktop apps, and automation scripts for faster workflows.
+- 📊 **Information Systems** — Business apps, admin dashboards, and data management systems.
+- 🤖 **Automation & Bots** — Game bots, TikTok integrations, and smart tools that run on their own.
+- 🎬 **Media Processing** — Browser-based video/audio cutters, color extractors, and file converters.
+- 🎮 **Games & Experiments** — Interactive games, UI experiments, and creative coding projects.
 
 ---
 
