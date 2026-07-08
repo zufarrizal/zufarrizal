@@ -85,6 +85,24 @@
 
 ---
 
+## 🔭 Currently Working On
+
+- 🚀 Building full-stack web applications with Go (Gin, Fiber) and Node.js
+- 🛠️ Creating developer tools and desktop apps with Electron & Fyne
+- 🎮 Experimenting with game bots and TikTok integrations
+- 📱 Exploring mobile development and cross-platform solutions
+
+---
+
+## 🌱 Currently Learning
+
+- Advanced Go patterns and microservices architecture
+- DevOps practices: Docker, CI/CD pipelines
+- System design and scalable backend architectures
+- UI/UX design principles for better user experiences
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
