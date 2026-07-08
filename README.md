@@ -54,6 +54,8 @@
 <img src="https://img.shields.io/badge/CodeIgniter-EF4223?style=flat-square&logo=codeigniter&logoColor=white" />
 <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" />
 <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
+<img src="https://img.shields.io/badge/Gin-00ADD8?style=flat-square&logo=go&logoColor=white" />
+<img src="https://img.shields.io/badge/Fiber-00ADD8?style=flat-square&logo=fiber&logoColor=white" />
 
 **Database**
 <br />
@@ -72,6 +74,7 @@
 **Tools**
 <br />
 <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white" />
+<img src="https://img.shields.io/badge/Fyne-00ADD8?style=flat-square&logo=go&logoColor=white" />
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" />
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />
 
