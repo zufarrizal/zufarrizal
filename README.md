@@ -62,54 +62,6 @@
 
 ---
 
-## 🚀 Featured Projects
-
-### Information Systems & Business Apps
-
-| Project | Language | Description |
-|---------|----------|-------------|
-| [WebsiteGo](https://github.com/zufarrizal/WebsiteGo) | Go | User management web app with Gin, GORM, MySQL — auth, roles, admin dashboard |
-| [Web-Desa](https://github.com/zufarrizal/Web-Desa) | JavaScript | Village admin service app with CodeIgniter 4 |
-| [Warung Online + WhatsApp](https://github.com/zufarrizal/Website-Warung-Online-Via-Whatsapp) | JavaScript | Online ordering system that sends orders via WhatsApp |
-| [SIPTAS](https://github.com/zufarrizal/siptas) | JavaScript | Thesis submission management system with CodeIgniter |
-| [Ujian Online](https://github.com/zufarrizal/Ujian-Online-PHP-MySQL) | PHP | Online exam system with randomized questions and auto-grading |
-| [e-gudang](https://github.com/zufarrizal/e-gudang) | JavaScript | Warehouse management system with Laravel |
-
-### Developer & Productivity Tools
-
-| Project | Language | Description |
-|---------|----------|-------------|
-| [StackScope Inspector](https://github.com/zufarrizal/StackScope-Inspector) | JavaScript | Website technology stack analyzer |
-| [HWID Info](https://github.com/zufarrizal/HWID-Info) | C# | Windows hardware identifier tool |
-| [Mass File Rename](https://github.com/zufarrizal/Mass-File-Rename-App) | Python | Batch file renaming GUI with Tkinter |
-| [UserAgent Changer](https://github.com/zufarrizal/userAgent-Changer) | JavaScript | Browser User-Agent switcher for testing |
-
-### Media & File Processing
-
-| Project | Language | Description |
-|---------|----------|-------------|
-| [Video Cutter](https://github.com/zufarrizal/Video-Cutter) | JavaScript | Browser-based video trimming with FFmpeg |
-| [Music Cutter](https://github.com/zufarrizal/Music-Cutter) | JavaScript | Audio trimming with A-B markers and WAV export |
-| [Excel to Graph](https://github.com/zufarrizal/Excel-to-Graph) | JavaScript | Auto-generate graphs from Excel files |
-| [Color Extractor](https://github.com/zufarrizal/Image-Based-Color-Extractors) | HTML | Extract color palettes from images |
-
-### Games & Interactive
-
-| Project | Language | Description |
-|---------|----------|-------------|
-| [Chrome Dino Bot](https://github.com/zufarrizal/Chrome-Dino) | JavaScript | Automated Dino game bot with real-time detection |
-| [Ular Tangga](https://github.com/zufarrizal/Ular-Tangga) | JavaScript | Classic Snake & Ladders in vanilla JS |
-| [TikTok × Minecraft](https://github.com/zufarrizal/TikTokMinecraftJs) | JavaScript | Control Minecraft via TikTok live interactions |
-
-### Desktop Apps
-
-| Project | Language | Description |
-|---------|----------|-------------|
-| [POS Kasir](https://github.com/zufarrizal/pos-electron) | JavaScript | Desktop POS app with Electron + SQLite |
-| [To-Do List Go](https://github.com/zufarrizal/To-do-List-Go) | Go | Lightweight task manager with Fyne GUI |
-
----
-
 ## 📊 GitHub Stats
 
 <div align="center">
